@@ -106,7 +106,7 @@
       .table .table {
         margin: 0px;
         background: none;
-        font-size: 12px;
+        font-size: 16px;
       }
 
       .table .table td {
@@ -125,30 +125,6 @@
       .table h6 {
         font-size: 14px;
       }
-
-      #watermark {
-        position: absolute;
-
-        opacity: 0.3;
-        top: 100px;
-        left: 500px;
-        color: lightgrey;
-        font-size: 120px;
-        transform: rotate(300deg);
-        -webkit-transform: rotate(300deg);
-      }
-
-      #watermark2 {
-        position: absolute;
-
-        opacity: 0.3;
-        top: 1700px;
-        left: 500px;
-        color: lightgrey;
-        font-size: 120px;
-        transform: rotate(300deg);
-        -webkit-transform: rotate(300deg);
-      }
     </style>
   </head>
 
@@ -159,23 +135,21 @@
         <div class="row">
           <div class="col-sm-2">
             <div class="logo">
-              <img src="../include/sample.jpg" alt="" />
+              <img src="../include/cashBillImage.jpeg" alt="" />
             </div>
           </div>
           <div class="col-sm-10">
             <div class="heading">
               <h1 class="font-weight-bold">SURYA AGENCIES</h1>
-              <h6 class="text-uppercase">
-                24/446, SVS complex, roomno.1, first floor,
-              </h6>
-              <h6 class="text-uppercase">
-                Near nehru statue, nellore - 524003, Cell : 9246439182, ph.
-                0861-2329183
-              </h6>
-              <h6>
-                E-mail : suryaagencies2222nlr@gmail.com
-                surya_agencies2222@yahoo.co.in
-              </h6>
+              <h5 class="text-uppercase font-weight-bold">
+                27/1/399, 11th Cross road, Balaji Nagar
+              </h5>
+              <h5 class="text-uppercase font-weight-bold">
+                Opp : Andhra Pragathi grameena bank, nellore - 524 002
+              </h5>
+              <h5 class="font-weight-bold">
+                E-mail : suryaagencies2222nlr@gmail.com, Cell No. : 9550991048
+              </h5>
               <h6>Website : https://www.suryaagencies.co.in</h6>
             </div>
           </div>
@@ -184,9 +158,9 @@
         <div class="row">
           <div class="col-md-12">
             <div class="gstno">
-              <h5 class="font-weight-bold text-center" style="margin: 0px;">
-                GSTIN No. : 37AXMPD7157N1ZT
-              </h5>
+              <h3 class="font-weight-bold text-center" style="margin: 0px;">
+                GSTIN No. : 37DXDPD0175G1ZQ
+              </h3>
             </div>
           </div>
         </div>
@@ -194,36 +168,31 @@
         <div class="row">
           <div class="col-md-12">
             <div class="gstno">
-              <h5 class="font-weight-bold text-center" style="margin: 0px;">
-                TAX INVOICE
-              </h5>
+              <h3 class="font-weight-bold text-center" style="margin: 0px;">
+                BILL OF SUPPLY
+              </h3>
             </div>
           </div>
         </div>
         <hr />
+
         <div class="row">
           <div class="col-md-12">
             <table class="table table-borderless" style="font-size: 18px;">
               <tbody>
                 <tr>
-                  <td class="table_right_border" id="invoiceNumber">
-                    <!-- <span class="font-weight-bold text-uppercase"
-                      >Invoice Number :
-                    </span> -->
-                  </td>
-                  <td id="supplyDate"></td>
+                  <td
+                    colspan="2"
+                    class="table_bottom_border"
+                    id="invoiceNumber"
+                  ></td>
                 </tr>
                 <tr>
-                  <td class="table_right_border" id="modeOfPayment"></td>
-                  <td id="transportationMode"></td>
-                </tr>
-                <tr>
-                  <td class="table_right_border table_bottom_border">
-                    <span class="font-weight-bold text-uppercase"
-                      >tax payable on reverse charge : </span
-                    >NO
-                  </td>
-                  <td class="table_bottom_border" id="supplyPlace"></td>
+                  <td
+                    class="table_right_border table_bottom_border"
+                    id="supplyDate"
+                  ></td>
+                  <td id="transportationMode" class="table_bottom_border"></td>
                 </tr>
                 <tr>
                   <td
@@ -281,111 +250,21 @@
               <table class="table table-bordered" id="detailTable">
                 <thead class="text-center">
                   <tr>
-                    <th rowspan="2">S.NO</th>
-                    <th rowspan="2">PRODUCT</th>
-                    <th rowspan="2">PRODUCT ID</th>
-                    <th rowspan="2">HNS CODE</th>
-                    <th rowspan="2">QTY</th>
-                    <th rowspan="2">PRICE</th>
-                    <th rowspan="2">SUB TOTAL</th>
-                    <th rowspan="2">DISCOUNT</th>
-                    <th colspan="2">CGST</th>
-                    <th colspan="2">SGST</th>
-                    <th colspan="2">IGST</th>
-
-                    <th rowspan="2">TOTAL</th>
-                  </tr>
-                  <tr>
-                    <th>%Rate</th>
-                    <th>Amount</th>
-                    <th>%Rate</th>
-                    <th>Amount</th>
-                    <th>%Rate</th>
-                    <th>Amount</th>
+                    <th>S.NO</th>
+                    <th>PRODUCT</th>
+                    <th>PRODUCT ID</th>
+                    <th>HNS CODE</th>
+                    <th>UOM</th>
+                    <th>QTY</th>
+                    <th>PRICE</th>
+                    <th>TOTAL</th>
+                    <th>VALUE OF SUPPLY</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td colspan="10" class="text-center font-weight-bold">
-                      OUR BANK DETAILS
-                    </td>
-                    <td
-                      colspan="4"
-                      class="text-right font-weight-bold text-uppercase"
-                    >
-                      taxable value
-                    </td>
-                    <td
-                      class="font-weight-bold"
-                      style="text-align: right;"
-                      id="amountBeforeTax"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      colspan="5"
-                      rowspan="4"
-                      class="text-center font-weight-bold"
-                    >
-                      <span>Bank Name : IDBI Ltd.,</span><br />
-                      <span>A/C No. 0337102000012537</span><br />
-                      <span>IFS Code : IBKL0000337</span><br />
-                      <span>Branch : Nellore</span>
-                    </td>
-                    <td
-                      colspan="5"
-                      rowspan="4"
-                      class="text-center font-weight-bold"
-                    >
-                      <span>Bank Name : INDUS IND BANK Ltd.,</span><br />
-                      <span>A/C No. 201003216058</span><br />
-                      <span>IFS Code : INDB0000076</span><br />
-                      <span>Branch : Nellore</span>
-                    </td>
-                    <td
-                      colspan="4"
-                      class="text-right font-weight-bold text-uppercase"
-                    >
-                      Add CGST
-                    </td>
-                    <td
-                      class="font-weight-bold"
-                      style="text-align: right;"
-                      id="addcgst"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      colspan="4"
-                      class="text-right font-weight-bold text-uppercase"
-                    >
-                      Add SGST
-                    </td>
-                    <td
-                      class="font-weight-bold"
-                      style="text-align: right;"
-                      id="addsgst"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      colspan="4"
-                      class="text-right font-weight-bold text-uppercase"
-                    >
-                      Add IGST
-                    </td>
-                    <td
-                      class="font-weight-bold"
-                      style="text-align: right;"
-                      id="addigst"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      colspan="4"
-                      class="text-right font-weight-bold text-uppercase"
-                    >
-                      grand total
+                    <td colspan="8" class="text-center font-weight-bold">
+                      TOTAL AMOUNT
                     </td>
                     <td
                       class="font-weight-bold"
@@ -395,10 +274,47 @@
                   </tr>
                   <tr>
                     <td
-                      colspan="15"
-                      class="text-uppercase text-center"
+                      colspan="9"
+                      class="text-uppercase text-center font-weight-bold"
                       id="amountInWords"
                     ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      colspan="3"
+                      class="text-center table_bottom_border table_right_border"
+                    >
+                      <span class="font-weight-bold text-uppercase"
+                        >Terms & Conditions</span
+                      >
+                    </td>
+                    <td colspan="6" class="text-center table_bottom_border">
+                      <span class="font-weight-bold text-uppercase"
+                        >our bank details</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" rowspan="4" class="font-weight-bold">
+                      <ol>
+                        <li>
+                          If the payment is not made with-in-the stipulated time
+                          interest @24% will be charged at our discription.
+                        </li>
+                        <li>Legal juridiction is Courts of NELLORE.</li>
+                      </ol>
+                    </td>
+                    <td
+                      colspan="6"
+                      rowspan="4"
+                      class="text-center font-weight-bold"
+                    >
+                      <span>Bank Name : Andhra Pragathi Grameena Bank</span
+                      ><br />
+                      <span>A/C No.: 91093087044</span><br />
+                      <span>IFS Code : APGB0004125</span><br />
+                      <span>Branch : Balaji Nagar, Nellore</span>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -408,41 +324,6 @@
               <div class="col-md-12">
                 <table class="table table-borderless">
                   <tbody>
-                    <tr>
-                      <td
-                        colspan="2"
-                        class="text-center font-weight-bold text-uppercase table_bottom_border text-center"
-                      >
-                        Terms & Conditions
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2" class="table_bottom_border">
-                        <ol>
-                          <li>
-                            If the payment is not made with-in-the stipulated
-                            time interest @24% will be charged at our
-                            discription.
-                          </li>
-                          <li>
-                            All cheque/Demand Draft in the name of
-                            <span class="font-weight-bold text-uppercase"
-                              >surya agencies</span
-                            >
-                            ACCOUNT PAYEE ONLY.
-                          </li>
-                          <li>
-                            Please insist for
-                            <span class="font-weight-bold text-uppercase"
-                              >surya agencies</span
-                            >
-                            preprinted preserially numbered cash receipt for all
-                            cash payments.
-                          </li>
-                          <li>Legal juridiction is Courts of NELLORE.</li>
-                        </ol>
-                      </td>
-                    </tr>
                     <tr>
                       <td
                         class="table_right_border text-center font-weight-bold text-uppercase"
@@ -485,6 +366,6 @@
         </div>
       </div>
     </div>
-    <script src="customerBillingInvoice.js"></script>
+    <script src="cashBillingInvoice.js"></script>
   </body>
 </html>
