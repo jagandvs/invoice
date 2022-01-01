@@ -22,7 +22,7 @@ let customerBillingDetails = JSON.parse(parameterList.get("data"));
 // supplyDate: "2021-07-22"
 // supplyPlace: "NELLORE."
 // totalAmount: "5158.00"
-// transactionMode: "By Hand"
+// transportationMode: "By Hand"
 document.getElementById(
   "shippingGstin"
 ).innerHTML = `<span class="font-weight-bold text-uppercase"
@@ -70,9 +70,9 @@ document.getElementById(
 </span>`;
 
 document.getElementById(
-  "transactionMode"
+  "transportationMode"
 ).innerHTML = `<span class="font-weight-bold text-uppercase"
-  >Transportation mode :${customerBillingDetails.transactionMode}
+  >Transportation mode :${customerBillingDetails.transportationMode}
 </span>`;
 
 document.getElementById(
