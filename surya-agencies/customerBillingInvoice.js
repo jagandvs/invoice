@@ -22,7 +22,7 @@ let customerBillingDetails = JSON.parse(parameterList.get("data"));
 // supplyDate: "2021-07-22"
 // supplyPlace: "NELLORE."
 // totalAmount: "5158.00"
-// transportationMode: "By Hand"
+// transactionMode: "By Hand"
 document.getElementById(
   "shippingGstin"
 ).innerHTML = `<span class="font-weight-bold text-uppercase"
@@ -70,9 +70,9 @@ document.getElementById(
 </span>`;
 
 document.getElementById(
-  "transportationMode"
+  "transactionMode"
 ).innerHTML = `<span class="font-weight-bold text-uppercase"
-  >Transportation mode :${customerBillingDetails.transportationMode}
+  >Transportation mode :${customerBillingDetails.transactionMode}
 </span>`;
 
 document.getElementById(
@@ -124,17 +124,17 @@ customerBillingDetails.soldproducts.map((data, index) => {
   cell6.innerHTML = data.price;
   cell7.innerHTML = data.subTotal;
   cell8.innerHTML = data.discount;
-  cell9.innerHTML = data.cgst.toFixed(2);
+  cell9.innerHTML = data.cgst;
   cell10.innerHTML = (
     (data.subTotal - data.discount) *
     (data.cgst / 100)
   ).toFixed(2);
-  cell11.innerHTML = data.sgst.toFixed(2);
+  cell11.innerHTML = data.sgst;
   cell12.innerHTML = (
     (data.subTotal - data.discount) *
     (data.sgst / 100)
   ).toFixed(2);
-  cell13.innerHTML = data.igst.toFixed(2);
+  cell13.innerHTML = data.igst;
   cell14.innerHTML = (
     (data.subTotal - data.discount) *
     (data.igst / 100)
