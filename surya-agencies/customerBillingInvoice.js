@@ -181,8 +181,9 @@ document.getElementById("amountBeforeTax").innerHTML = amountBeforeTax;
 document.getElementById("addcgst").innerHTML = total_cgst.toFixed(2);
 document.getElementById("addsgst").innerHTML = total_sgst.toFixed(2);
 document.getElementById("addigst").innerHTML = total_igst.toFixed(2);
-document.getElementById("grandTotal").innerHTML =
-  customerBillingDetails.totalAmount;
+document.getElementById(
+  "grandTotal"
+).innerHTML = customerBillingDetails.totalAmount.toFixed(2);
 
 document.getElementById(
   "amountInWords"

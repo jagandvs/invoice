@@ -108,8 +108,9 @@ for (let i = customerBillingDetails.soldproducts.length; i < 10; i++) {
   cell9.innerHTML = "";
 }
 
-document.getElementById("grandTotal").innerHTML =
-  customerBillingDetails.totalAmount;
+document.getElementById(
+  "grandTotal"
+).innerHTML = customerBillingDetails.totalAmount.toFixed(2);
 
 document.getElementById(
   "amountInWords"
