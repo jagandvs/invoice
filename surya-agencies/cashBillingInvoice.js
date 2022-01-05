@@ -5,9 +5,8 @@ parameterList = new URLSearchParams(address);
 
 // Returning the respected value associated
 // with the provided key
-console.log(JSON.parse(parameterList.get("data")));
-
-let customerBillingDetails = JSON.parse(parameterList.get("data"));
+console.log(parameterList.get("data"));
+let customerBillingDetails = parameterList.get("data");
 document.getElementById(
   "shippingGstin"
 ).innerHTML = `<span class="font-weight-bold text-uppercase"
@@ -108,9 +107,8 @@ for (let i = customerBillingDetails.soldproducts.length; i < 10; i++) {
   cell9.innerHTML = "";
 }
 
-document.getElementById(
-  "grandTotal"
-).innerHTML = customerBillingDetails.totalAmount.toFixed(2);
+document.getElementById("grandTotal").innerHTML =
+  customerBillingDetails.totalAmount;
 
 document.getElementById(
   "amountInWords"
