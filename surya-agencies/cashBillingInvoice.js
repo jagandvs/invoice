@@ -6,7 +6,8 @@ parameterList = new URLSearchParams(address);
 // Returning the respected value associated
 // with the provided key
 console.log(parameterList.get("data"));
-let customerBillingDetails = parameterList.get("data");
+let customerBillingDetails = JSON.parse(parameterList.get("data"));
+
 document.getElementById(
   "shippingGstin"
 ).innerHTML = `<span class="font-weight-bold text-uppercase"
