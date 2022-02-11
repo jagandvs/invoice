@@ -93,8 +93,8 @@ var total_igst = 0;
 var total_discount = 0;
 customerBillingDetails.soldproducts.map((data, index) => {
   amountBeforeTax = (+amountBeforeTax + +data.subTotal).toFixed(2);
-  console.log(amountBeforeTax);
-  total_discount += data.discount;
+
+  total_discount += +data.discount;
   total_cgst = (data.subTotal - data.discount) * (data.cgst / 100) + total_cgst;
   total_sgst = (data.subTotal - data.discount) * (data.sgst / 100) + total_sgst;
   total_igst = (data.subTotal - data.discount) * (data.igst / 100) + total_igst;
@@ -177,7 +177,10 @@ for (let i = customerBillingDetails.soldproducts.length; i < 10; i++) {
   cell15.innerHTML = "";
 }
 
-document.getElementById("amountBeforeTax").innerHTML = amountBeforeTax;
+console.log(amountBeforeTax, total_discount);
+document.getElementById("amountBeforeTax").innerHTML = (
+  amountBeforeTax - +total_discount
+).toFixed(2);
 document.getElementById("addcgst").innerHTML = total_cgst.toFixed(2);
 document.getElementById("addsgst").innerHTML = total_sgst.toFixed(2);
 document.getElementById("addigst").innerHTML = total_igst.toFixed(2);
