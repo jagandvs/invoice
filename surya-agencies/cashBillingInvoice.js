@@ -81,7 +81,8 @@ customerBillingDetails.soldproducts.map((data, index) => {
   cell6.innerHTML = data.quantity;
   cell7.innerHTML = data.price;
 
-  cell9.innerHTML = data.grandTotal;
+  cell9.innerHTML = `<span class="text-right">${data.grandTotal}</span>`;
+
   cell8.innerHTML = data.grandTotal;
 });
 
