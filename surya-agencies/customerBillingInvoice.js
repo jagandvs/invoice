@@ -121,14 +121,14 @@ customerBillingDetails.soldproducts.map((data, index) => {
   cell3.innerHTML = data.productCode;
   cell4.innerHTML = data.hnsCode;
   cell5.innerHTML = data.quantity;
-  cell6.innerHTML = data.price;
-  cell7.innerHTML = data.subTotal;
+  cell6.innerHTML = `<span class="text-right">${data.price}</span>`;
+  cell7.innerHTML = `<span class="text-right">${data.subTotal}</span>`;
   cell8.innerHTML = data.discount;
   cell9.innerHTML = data.cgst;
-  cell10.innerHTML = (
+  cell10.innerHTML = `<span class="text-right">${(
     (data.subTotal - data.discount) *
     (data.cgst / 100)
-  ).toFixed(2);
+  ).toFixed(2)}</span>`;
   cell11.innerHTML = data.sgst;
   cell12.innerHTML = (
     (data.subTotal - data.discount) *

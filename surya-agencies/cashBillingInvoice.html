@@ -1,378 +1,348 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="include/sample.jpg" rel="icon" type="image/jpg" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <title>Surya Agencies | Print Customer Copy</title>
-    <style>
-      body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: #fafafa;
-        /*font: 12pt "Tahoma";*/
-      }
 
-      .subpage {
-        border: 5px black solid;
-        padding: 10px;
-        border-radius: 5px;
-        border-style: double;
-      }
+<head>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5f1e54375e51983a11f5d849/1eg95v30j';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <link href="include/sample.jpg" rel="icon" type="image/jpg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <title>Surya Agencies | Print Customer Copy</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      /*font: 12pt "Tahoma";*/
+    }
 
-      .page1 {
-        padding: 20px;
-        margin: 20px;
-      }
+    .subpage {
+      border: 5px black solid;
+      padding: 10px;
+      border-radius: 5px;
+      border-style: double;
+    }
 
+    .page1 {
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .page {
+      padding: 5px;
+      margin: 5px;
+    }
+
+    @page {
+      margin: 60px, 20px, 40px, 20px;
+    }
+
+    @media print {
       .page {
-        padding: 5px;
-        margin: 5px;
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
       }
 
       @page {
-        margin: 60px, 20px, 40px, 20px;
+        margin-top: 0;
+        margin-bottom: 0;
       }
 
-      @media print {
-        .page {
-          margin: 0;
-          border: initial;
-          border-radius: initial;
-          width: initial;
-          min-height: initial;
-          box-shadow: initial;
-          background: initial;
-          page-break-after: always;
-        }
+      body {
+        padding-top: 72px;
+        padding-bottom: 72px;
       }
+    }
 
-      .logo img {
-        height: 180px;
-        padding-left: 30px;
-      }
+    .logo img {
+      height: 180px;
+      padding-left: 30px;
+    }
 
-      .heading {
-        text-align: center;
-        font-family: "Times New Roman", Times, serif;
-      }
+    .heading {
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+    }
 
-      .heading h1 {
-        font-size: 70px;
-        font-family: "Times New Roman", Times, serif;
-      }
+    .heading h1 {
+      font-size: 70px;
+      font-family: "Times New Roman", Times, serif;
+    }
 
-      .heading h6 {
-        font-size: 16px;
-      }
+    .heading h6 {
+      font-size: 16px;
+    }
 
-      hr {
-        border: 2px solid;
-        padding: 0px;
-        margin: 0px;
-      }
+    hr {
+      border: 2px solid;
+      padding: 0px;
+      margin: 0px;
+    }
 
-      .table tr .table_right_border {
-        border-right: 2px solid;
-      }
+    .table tr .table_right_border {
+      border-right: 2px solid;
+    }
 
-      .table .table .table_right_border {
-        border-right: 2px solid;
-      }
+    .table .table .table_right_border {
+      border-right: 2px solid;
+    }
 
-      .table tr .table_bottom_border {
-        border-bottom: 2px solid;
-      }
+    .table tr .table_bottom_border {
+      border-bottom: 2px solid;
+    }
 
-      .table-bordered,
-      .table-bordered tr th,
-      .table-bordered tr td {
-        border: 2px solid !important;
-      }
+    .table-bordered,
+    .table-bordered tr th,
+    .table-bordered tr td {
+      border: 2px solid !important;
+    }
 
-      .table-borderless tr td,
-      .table-bordered tr td {
-        padding: 0px 5px 0px 5px;
-        margin: 0px;
-      }
+    .table-borderless tr td,
+    .table-bordered tr td {
+      padding: 0px 5px 0px 5px;
+      margin: 0px;
+    }
 
-      .table .table {
-        margin: 0px;
-        background: none;
-        font-size: 16px;
-      }
+    .table .table {
+      margin: 0px;
+      background: none;
+      font-size: 16px;
+    }
 
-      .table .table td {
-        font-size: 16px;
-      }
+    .table .table td {
+      font-size: 16px;
+    }
 
-      .table .table th {
-        padding: 2px;
-        margin: 0px;
-      }
+    .table .table th {
+      padding: 2px;
+      margin: 0px;
+    }
 
-      .table {
-        font-size: 16px;
-      }
+    .table {
+      font-size: 16px;
+    }
 
-      .table h6 {
-        font-size: 14px;
-      }
-    </style>
-  </head>
+    .table h6 {
+      font-size: 14px;
+    }
+  </style>
+</head>
 
-  <body>
-    <div class="page">
-      <div id="watermark"></div>
-      <div class="subpage">
-        <div class="row">
-          <div class="col-sm-2">
-            <div class="logo">
-              <img src="../include/cashBillImage.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="col-sm-10">
-            <div class="heading">
-              <h1 class="font-weight-bold">SURYA AGENCIES</h1>
-              <h5 class="text-uppercase font-weight-bold">
-                27/1/399, 11th Cross road, Balaji Nagar
-              </h5>
-              <h5 class="text-uppercase font-weight-bold">
-                Opp : Andhra Pragathi grameena bank, nellore - 524 002
-              </h5>
-              <h5 class="font-weight-bold">
-                E-mail : suryaagencies2222nlr@gmail.com, Cell No. : 9550991048
-              </h5>
-              <h6>Website : https://www.suryaagencies.co.in</h6>
-            </div>
+<body>
+  <div class="page">
+    <div id="watermark"></div>
+    <div class="subpage">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="logo">
+            <img src="../include/cashBillImage.jpeg" alt="" />
           </div>
         </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-12">
-            <div class="gstno">
-              <h3 class="font-weight-bold text-center" style="margin: 0px;">
-                GSTIN No. : 37DXDPD0175G1ZQ
-              </h3>
-            </div>
+        <div class="col-sm-10">
+          <div class="heading">
+            <h1 class="font-weight-bold">SURYA AGENCIES</h1>
+            <h5 class="text-uppercase font-weight-bold">
+              27/1/399, 11th Cross road, Balaji Nagar
+            </h5>
+            <h5 class="text-uppercase font-weight-bold">
+              Opp : Andhra Pragathi grameena bank, nellore - 524 002
+            </h5>
+            <h5 class="font-weight-bold">
+              E-mail : suryaagencies2222nlr@gmail.com, Cell No. : 9550991048
+            </h5>
+            <h6>Website : https://www.suryaagencies.co.in</h6>
           </div>
         </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-12">
-            <div class="gstno">
-              <h3 class="font-weight-bold text-center" style="margin: 0px;">
-                BILL OF SUPPLY
-              </h3>
-            </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="gstno">
+            <h3 class="font-weight-bold text-center" style="margin: 0px;">
+              GSTIN No. : 37DXDPD0175G1ZQ
+            </h3>
           </div>
         </div>
-        <hr />
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="gstno">
+            <h3 class="font-weight-bold text-center" style="margin: 0px;">
+              BILL OF SUPPLY
+            </h3>
+          </div>
+        </div>
+      </div>
+      <hr />
 
-        <div class="row">
-          <div class="col-md-12">
-            <table class="table table-borderless" style="font-size: 18px;">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-borderless" style="font-size: 18px;">
+            <tbody>
+              <tr>
+                <td colspan="2" class="table_bottom_border" id="invoiceNumber"></td>
+              </tr>
+              <tr>
+                <td class="table_right_border table_bottom_border" id="supplyDate"></td>
+                <td id="transportationMode" class="table_bottom_border"></td>
+              </tr>
+              <tr>
+                <td class="text-center table_bottom_border table_right_border">
+                  <span class="font-weight-bold text-uppercase">details of consinie (billed to)</span>
+                </td>
+                <td class="text-center table_bottom_border">
+                  <span class="font-weight-bold text-uppercase">details of receiver</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="table_right_border" id="deliveryName"></td>
+                <td id="shippingName"></td>
+              </tr>
+              <tr>
+                <td class="table_right_border" id="deliveryAddress"></td>
+                <td id="shippingAddress"></td>
+              </tr>
+              <tr>
+                <td class="table_right_border" id="deliveryGstin"></td>
+                <td id="shippingGstin"></td>
+              </tr>
+              <tr>
+                <td class="table_right_border table_bottom_border">
+                  <span class="font-weight-bold text-uppercase">state : Andhra pradesh
+                  </span>
+
+                  <span class="font-weight-bold text-uppercase" style="float: right;">state code : 37
+                  </span>
+                </td>
+                <td class="table_bottom_border">
+                  <span class="font-weight-bold text-uppercase">state : Andhra pradesh
+                  </span>
+
+                  <span class="font-weight-bold text-uppercase" style="float: right;">state code : 37
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table" style="margin-bottom: 0px;">
+            <table class="table table-bordered" id="detailTable">
+              <thead class="text-center">
+                <tr>
+                  <th>S.NO</th>
+                  <th>PRODUCT</th>
+                  <th>PRODUCT ID</th>
+                  <th>HNS CODE</th>
+                  <th>UOM</th>
+                  <th>QTY</th>
+                  <th>PRICE</th>
+                  <th>TOTAL</th>
+                  <th>VALUE OF SUPPLY</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td
-                    colspan="2"
-                    class="table_bottom_border"
-                    id="invoiceNumber"
-                  ></td>
-                </tr>
-                <tr>
-                  <td
-                    class="table_right_border table_bottom_border"
-                    id="supplyDate"
-                  ></td>
-                  <td id="transportationMode" class="table_bottom_border"></td>
-                </tr>
-                <tr>
-                  <td
-                    class="text-center table_bottom_border table_right_border"
-                  >
-                    <span class="font-weight-bold text-uppercase"
-                      >details of consinie (billed to)</span
-                    >
+                  <td colspan="8" class="text-center font-weight-bold">
+                    TOTAL AMOUNT
                   </td>
-                  <td class="text-center table_bottom_border">
-                    <span class="font-weight-bold text-uppercase"
-                      >details of receiver</span
-                    >
+                  <td class="font-weight-bold" style="text-align: right;" id="grandTotal"></td>
+                </tr>
+                <tr>
+                  <td colspan="9" class="text-uppercase text-center font-weight-bold" id="amountInWords"></td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="text-center table_bottom_border table_right_border">
+                    <span class="font-weight-bold text-uppercase">Terms & Conditions</span>
+                  </td>
+                  <td colspan="6" class="text-center table_bottom_border">
+                    <span class="font-weight-bold text-uppercase">our bank details</span>
                   </td>
                 </tr>
                 <tr>
-                  <td class="table_right_border" id="deliveryName"></td>
-                  <td id="shippingName"></td>
-                </tr>
-                <tr>
-                  <td class="table_right_border" id="deliveryAddress"></td>
-                  <td id="shippingAddress"></td>
-                </tr>
-                <tr>
-                  <td class="table_right_border" id="deliveryGstin"></td>
-                  <td id="shippingGstin"></td>
-                </tr>
-                <tr>
-                  <td class="table_right_border table_bottom_border">
-                    <span class="font-weight-bold text-uppercase"
-                      >state : Andhra pradesh
-                    </span>
-
-                    <span
-                      class="font-weight-bold text-uppercase"
-                      style="float: right;"
-                      >state code : 37
-                    </span>
+                  <td colspan="3" rowspan="4" class="font-weight-bold">
+                    <ol>
+                      <li>
+                        If the payment is not made with-in-the stipulated time
+                        interest @24% will be charged at our discription.
+                      </li>
+                      <li>Legal juridiction is Courts of NELLORE.</li>
+                    </ol>
                   </td>
-                  <td class="table_bottom_border">
-                    <span class="font-weight-bold text-uppercase"
-                      >state : Andhra pradesh
-                    </span>
-
-                    <span
-                      class="font-weight-bold text-uppercase"
-                      style="float: right;"
-                      >state code : 37
-                    </span>
+                  <td colspan="3" rowspan="4" class="text-center font-weight-bold">
+                    <span>Bank Name : Andhra Pragathi Grameena Bank</span><br />
+                    <span>A/C No.: 91093087044</span><br />
+                    <span>IFS Code : APGB0004125</span><br />
+                    <span>Branch : Balaji Nagar, Nellore</span>
+                  </td>
+                  <td colspan="3" rowspan="4" class="text-center font-weight-bold">
+                    <img src="../include/cashqr.jpeg" height="150" />
                   </td>
                 </tr>
               </tbody>
             </table>
-            <div class="table" style="margin-bottom: 0px;">
-              <table class="table table-bordered" id="detailTable">
-                <thead class="text-center">
-                  <tr>
-                    <th>S.NO</th>
-                    <th>PRODUCT</th>
-                    <th>PRODUCT ID</th>
-                    <th>HNS CODE</th>
-                    <th>UOM</th>
-                    <th>QTY</th>
-                    <th>PRICE</th>
-                    <th>TOTAL</th>
-                    <th>VALUE OF SUPPLY</th>
-                  </tr>
-                </thead>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-borderless">
                 <tbody>
                   <tr>
-                    <td colspan="8" class="text-center font-weight-bold">
-                      TOTAL AMOUNT
+                    <td class="table_right_border text-center font-weight-bold text-uppercase">
+                      received the above in good condition
                     </td>
-                    <td
-                      class="font-weight-bold"
-                      style="text-align: right;"
-                      id="grandTotal"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      colspan="9"
-                      class="text-uppercase text-center font-weight-bold"
-                      id="amountInWords"
-                    ></td>
-                  </tr>
-                  <tr>
-                    <td
-                      colspan="3"
-                      class="text-center table_bottom_border table_right_border"
-                    >
-                      <span class="font-weight-bold text-uppercase"
-                        >Terms & Conditions</span
-                      >
-                    </td>
-                    <td colspan="6" class="text-center table_bottom_border">
-                      <span class="font-weight-bold text-uppercase"
-                        >our bank details</span
-                      >
+                    <td class="text-center">
+                      Certified that the particulars given above are true and
+                      correct
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="3" rowspan="4" class="font-weight-bold">
-                      <ol>
-                        <li>
-                          If the payment is not made with-in-the stipulated time
-                          interest @24% will be charged at our discription.
-                        </li>
-                        <li>Legal juridiction is Courts of NELLORE.</li>
-                      </ol>
+                    <td class="table_right_border"></td>
+                    <td class="text-center font-weight-bold text-uppercase">
+                      <span class="font-italic">for surya agencies</span>
                     </td>
-                    <td
-                      colspan="3"
-                      rowspan="4"
-                      class="text-center font-weight-bold"
-                    >
-                      <span>Bank Name : Andhra Pragathi Grameena Bank</span
-                      ><br />
-                      <span>A/C No.: 91093087044</span><br />
-                      <span>IFS Code : APGB0004125</span><br />
-                      <span>Branch : Balaji Nagar, Nellore</span>
+                  </tr>
+                  <tr>
+                    <td class="table_right_border" style="padding: 15px;"></td>
+                    <td style="padding: 15px;"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_right_border text-center font-weight-bold text-uppercase">
+                      received signature & seal
                     </td>
-                    <td
-                      colspan="3"
-                      rowspan="4"
-                      class="text-center font-weight-bold"
-                    >
-                      <img src="../include/cashqr.jpeg" height="150" />
+                    <td class="text-center">
+                      Authorized Signature
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-
-            <div class="row">
-              <div class="col-md-12">
-                <table class="table table-borderless">
-                  <tbody>
-                    <tr>
-                      <td
-                        class="table_right_border text-center font-weight-bold text-uppercase"
-                      >
-                        received the above in good condition
-                      </td>
-                      <td class="text-center">
-                        Certified that the particulars given above are true and
-                        correct
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table_right_border"></td>
-                      <td class="text-center font-weight-bold text-uppercase">
-                        <span class="font-italic">for surya agencies</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        class="table_right_border"
-                        style="padding: 15px;"
-                      ></td>
-                      <td style="padding: 15px;"></td>
-                    </tr>
-                    <tr>
-                      <td
-                        class="table_right_border text-center font-weight-bold text-uppercase"
-                      >
-                        received signature & seal
-                      </td>
-                      <td class="text-center">
-                        Authorized Signature
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="cashBillingInvoice.js"></script>
-  </body>
+  </div>
+  <script src="cashBillingInvoice.js"></script>
+</body>
+
 </html>
